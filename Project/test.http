@@ -1,0 +1,26 @@
+### GET all tasks
+GET http://localhost:8081/api/tasks
+
+### GET one task
+GET http://localhost:8081/api/tasks/1
+
+### POST create task
+POST http://localhost:8081/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Task from VS Code",
+  "description": "Testing CRUD"
+}
+
+### PUT update task
+PUT http://localhost:8081/api/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Updated task",
+  "description": "Updated description"
+}
+
+### DELETE task
+DELETE http://localhost:8081/api/tasks/1
